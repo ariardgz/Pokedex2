@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokedex</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <audio autoplay loop src="./audio.ogg" type="audio/ogg" ></audio>
+    <div>
+        
+        <h1 class="title">Welcome <span class="typed"></span></h1>
+    </div>
+    <div>
+        <!--<img src="./pokedexGalar.jpg" class="pokedexGalar" alt=""pokedexGalar>-->
+    </div>
+
+    <main>
+        <div class="ray">
+            <div class="quadrate-one"></div>
+            <div class="triangle-two"></div>
+            <div class="trianngle-three"></div>
+        </div>
+        <div class="container">
+            <div class="image-container">
+
+                <div class="name-number">
+                    <p class="pokemon__name"></p>
+
+                    <div class="number">
+                        <p class="pokemon__number"></p>
+                    </div>
+
+                </div>
+
+                <!--<img  src="./image.png" class="imagePokemon_back" alt="pokemonBack">-->
+                <img  src="" class="pokemon__image" alt="pokemon">
+                
+
+                
+
+            </div>
+
+            <div class="container-description">
+                <div class="container-search">
+                    <form class="form">
+                    <label for="pokemon-search"></label>
+                    <input list="pokemon-options" type="text" class="input_search"value="" placeholder="Name or Number" required></input>
+                    <datalist id="pokemon-options">
+                        <option value=" "></option>
+                        <option value=" "></option>
+                        <option value=" "></option>
+                    </datalist>
+                    </form>
+
+                    
+                    <button class="btn__next">Next > </button>
+                </div>
+                <div class="description">
+                    <p class="description__pokemon"></p>
+                </div>
+
+                
+                <a href="#" class="hero__cta">Stats</a>
+
+            </div>
+
+        </div>
+        
+        
+        
+    </main>
+
+    <!--MODAL-->
+    <section class="modal " >
+        <div class="modal__container">
+            <h2 class="modal__title">¡Catch them all!</h2>
+            <div data-poke-stats class="poke-stats"></div>
+            <p class="modal__paragraph"></p>
+            <a href="#" class="modal__close">Close</a>
+        </div>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script  src="./index.js" type="module"></script>
+</body>
+</html>
